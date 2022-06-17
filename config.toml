@@ -1,0 +1,52 @@
+baseURL = 'https://cogitovirus.com/'
+languageCode = 'en-us'
+title = 'cogitovirus.com'
+
+theme = 'cactus'
+
+googleAnalytics = "UA-XXXXXXXX-XX"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[params]
+  colortheme = "white"
+  description = "This is a description"
+  mainSection = "posts"
+  mainSectionTitle = "Blog"
+  showAllPostsOnHomePage = false
+  postsOnHomePage = 5
+  showProjectsList = true
+  [params.comments]
+    enabled = false
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/cogitovirus/"
+
+[[params.social]]
+  name = "email"
+  link = "w.zolnierowicz@gmail.com"
+
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/cogitovirus/"
+
+
