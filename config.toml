@@ -33,20 +33,19 @@ weight = 4
   mainSectionTitle = "Blog"
   showAllPostsOnHomePage = false
   postsOnHomePage = 5
-  showProjectsList = true
+  showProjectsList = false
   [params.comments]
     enabled = false
+
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/cogitovirus/"
 
 [[params.social]]
   name = "github"
   link = "https://github.com/cogitovirus/"
 
 [[params.social]]
-  name = "email"
-  link = "w.zolnierowicz@gmail.com"
-
-[[params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/cogitovirus/"
-
+  name = "twitter"
+  link = "https://twitter.com/cogitovirus3"
 

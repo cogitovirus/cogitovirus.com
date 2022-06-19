@@ -1,7 +1,7 @@
 ---
 author: "wzolni"
-title: "First post"
-date: 2022-06-17
+title: "Second post"
+date: 2022-06-18
 draft: false
 tags: [
     "tag1",
