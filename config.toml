@@ -34,8 +34,6 @@ weight = 4
   showAllPostsOnHomePage = false
   postsOnHomePage = 5
   showProjectsList = false
-  [params.comments]
-    enabled = false
 
 [[params.social]]
   name = "linkedin"
