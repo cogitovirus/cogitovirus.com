@@ -28,7 +28,7 @@ weight = 4
 
 [params]
   colortheme = "white"
-  description = "This is a description"
+  description = "A personal website about work, engineering and stuff."
   mainSection = "posts"
   mainSectionTitle = "Blog"
   showAllPostsOnHomePage = false
@@ -40,10 +40,12 @@ weight = 4
   link = "https://www.linkedin.com/in/cogitovirus/"
 
 [[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/cogitovirus3"
+
+[[params.social]]
   name = "github"
   link = "https://github.com/cogitovirus/"
 
-[[params.social]]
-  name = "twitter"
-  link = "https://twitter.com/cogitovirus3"
+
 

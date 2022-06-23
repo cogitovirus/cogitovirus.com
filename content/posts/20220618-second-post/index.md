@@ -2,7 +2,7 @@
 author: "wzolni"
 title: "Second post"
 date: 2022-06-18
-draft: false
+draft: true
 tags: [
     "tag1",
     "tag2",
