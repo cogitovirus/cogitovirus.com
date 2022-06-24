@@ -1,17 +1,17 @@
 @import "variables";
-@import "colors/{{ site.Params.colortheme | default "white" }}";
+@import 'colors/{{ site.Params.colortheme | default "white"}}';
 @import "util";
 @import "mixins";
 @import "extend";
 @import "fonts";
 
-// global-reset()
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 html {
   margin: 0;
   padding: 0;
@@ -19,6 +19,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   height: 100%;
@@ -33,9 +34,8 @@ body {
   flex: 1;
 
   @include antialias();
-
-  @extend $base-style !optional;
 }
+
 .content {
   position: relative;
   display: flex;

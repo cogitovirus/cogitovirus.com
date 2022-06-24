@@ -1,9 +1,9 @@
 {{ define "main" }}
   <section id="about">
-  {{ if isset .Site.Params "description" }}
+  {{ if .Site.Params.description }}
     {{ .Site.Params.description | $.Page.RenderString }}
   {{ end }}
-  {{ if isset .Site.Params "social" }}
+  {{ if .Site.Params.social }}
       <p>If you would like to connect, find me on
       {{ $length := (len .Site.Params.social) }}
       {{ range $index, $elem := .Site.Params.social}}
