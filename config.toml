@@ -4,7 +4,8 @@ title = 'cogitovirus.com'
 
 theme = 'cactus'
 
-googleAnalytics = "UA-XXXXXXXX-XX"
+googleAnalytics = "G-F6QNNGB76R"
+enableRobotsTXT = true
 
 [[menu.main]]
 name = "Home"
