@@ -7,6 +7,9 @@ theme = 'cactus'
 googleAnalytics = "G-F6QNNGB76R"
 enableRobotsTXT = true
 
+[sitemap]
+  filename = 'sitemap.xml'
+
 [[menu.main]]
 name = "Home"
 url = "/"
