@@ -1,6 +1,11 @@
 # cogitovirus.com
 Personal blog written in hugo.
 
+## local
+```
+hugo server
+```
+
 ## deploy
 First build the site with
 ```

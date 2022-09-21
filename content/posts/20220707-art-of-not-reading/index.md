@@ -2,7 +2,7 @@
 author: "wzolni"
 title: "The art of not reading"
 date: 2022-06-24
-draft: false
+draft: true
 tags: [
     "books",
     "philosophy",

@@ -2,7 +2,7 @@
 author: "wzolni"
 title: "Hydroponic garden: A DIY engineering project"
 date: 2022-06-27
-draft: false
+draft: true
 ---
 v.0.1
 

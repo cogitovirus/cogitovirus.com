@@ -37,7 +37,7 @@ weight = 4
   mainSectionTitle = "Blog"
   showAllPostsOnHomePage = false
   postsOnHomePage = 5
-  showProjectsList = true
+  showProjectsList = false
 
 [[params.social]]
   name = "linkedin"
