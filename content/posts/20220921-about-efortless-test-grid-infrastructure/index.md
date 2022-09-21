@@ -11,9 +11,9 @@ tags: [
 ]
 ---
 
-I've dealt with various implementations of UI test grids and it hasn't been exactly a joy ride. In January 2021, again, I needed to set up a new grid for my QA team. It would replace [Zalenium](https://github.com/zalando/zalenium/), a decent open-source stack that unfortunately wasn't maintained anymore.
+I've dealt with various implementations of UI test grids and it hasn't been exactly a joy ride. In the middle of 2021, again, I needed to set up a new grid for my QA team. It would replace [Zalenium](https://github.com/zalando/zalenium/), a decent open-source stack that unfortunately wasn't maintained anymore.
 
-A reasonable alternative should meet at least these requirements:
+**A reasonable alternative should meet at least these requirements:**
 * able to handle 20+ parallel sessions (*duh!*)
 * able to self-heal (kill/clean hanged sessions)
 * preferably open-source and not so pricey
@@ -27,13 +27,13 @@ The first obvious candidate was [Docker Selenium](https://github.com/SeleniumHQ/
 After reviewing the documentation, I started to create a prototype and tried a couple of suggested docker-compose setups. But after a few days, frustration started to build up.
 **It takes a lot of trial & error to piece together a grid with just a couple of open sessions with video recording and what I had felt volatile**. Adding additional pieces required going deep into the grid internals, reviewing documentation again & again, and not only for the grid itself but also for docker & docker-compose to understand how I can sew it all together. I don't know why I should ever care about Routers, Event Bus, Sessions Maps, Sessions Queues, etc. Unfortunately, if you want a bit more custom, dynamic and fancy solution, you do need to understand how those components work together.
 
-Another day came by and I decided that it was not worth the pain. Even if I would make it work, good luck to someone who comes after me to support it. To keep it short, in my opinion, this project is way too complicated for the end user at this point. Not only to build on it, but also to maintain it.
+Another day came by and I decided that it was not worth the pain. Even if I would make it work, good luck to someone who comes after me to support it. **To keep it short, in my opinion, this project is way too complicated for the end user at this point.** Not only to build on it, but also to maintain it.
 
 ## Sauce-Stacked-Lambda's
 
 On the other side of the spectrum, there are alternatives like [SauceLabs](https://saucelabs.com/), [BrowserStack](https://www.browserstack.com/), and [LambdaTest](https://www.lambdatest.com/). They promise to take away all your pain (for only a handful of dollars), so you could finally focus on your automated tests. But is it worth the price tag?
 
-**For 20 parallel sessions, the price varies between \$2000 - \$3000 per month (billed annually). Call me cheap, but that's a bit pricey**. On top of that, from what I recall, it's not all sunshine & rainbows anyways. Watching tests complete on one of those services feels like watching a toothless grandma eat a cob of corn. **Yes, it's that slow**. This is something that you could feel dragging you down when you debug your tests. Which is already a massive pain with e2e without the additional overhead.
+**For 20 parallel sessions, the price varies between \$2000 - \$3000 per month (billed annually). Call me cheap, but that's a bit pricey**. On top of that, from what I recall, it's not all sunshine & rainbows anyways. Watching tests complete on one of those services feels like watching a toothless grandma eat a cob of corn. **Yes, it's that slow**. This is something that you can feel pulling you down when you debug your tests. Debugging e2e tests is already a massive time sink without the additional overhead of waiting for your page to render on the toaster-sized server somewhere in the middle of nowhere.
 
 **The final nail in the coffin is tunneling and intermittent network issues that come with it**. For the grid to be able to reach your application, which is usually hidden behind your company's firewall, you need to set up some sort of network tunnel. I don't know why, but it always tends to break, making my tests unstable for a reason that I can't control. So this option is out as well.
 
@@ -59,7 +59,7 @@ What's also cool about Selenoid is that the **setup and upgrades are a piece of 
 
 Originally, this post was supposed to be about how to set up your Selenoid grid in the cloud. When I redid the steps, I realized I forgot it's not exactly rocket science and that I would end up copying the commands from the official site to the post here. So instead, let me just provide you with some additional pointers on how to set up Selenoid and avoid having to apply any corrections afterward:
 * Check, whether your cloud provider has a ready-to-go image for Selenoid available (I know at least GCP does)
-* **When creating your VM from scratch, use a regular Linux base image**, not any container optimized one While it has 'optimized container service' and Selenoid runs everything in docker, you might end up not having useful command line utilities like find/grep/apt/wget
+* **When creating your VM from scratch, use a regular Linux base image**, not any container optimized one While it has 'optimized container service' and Selenoid runs everything in docker, you might end up not having useful command line utilities like find/grep/apt/wget which come in handy when you need to set up some supporting scripts.
 * Setup on the VM is easy. Install docker & download the Selenoid configuration manager. Follow the official docs to set the browser types, their amount, video recording, VNC, or whatever you need
 * **If you enable video recording, set up a simple cron shell script that would rotate the logs & videos.**
 Example script below will remove videos older than 14 days. Run it once a day.
@@ -72,4 +72,4 @@ find /home/ubuntu/.aerokube/selenoid/video -mindepth 1 -maxdepth 1 -mtime +14 -n
 * **Reserve a static IP for your machine**. In case of a restart, you will not only not have to remember to remap it to your domain, but it will remove a lot of rework if your company has additional ingress/egress firewall rules in place. In my case, the network security layer was detecting an SQL injection being done from Selenoid IP, which was part of a normal use case for the application, so its IP needed to be explicitly whitelisted.
 * **Remember to set up a VPC with a firewall** of your own, so that your grid won't be accessible to the rest of the world - **that's a must!**
 
-**Thanks for reading!**
+**That's all! Thanks for reading!**
