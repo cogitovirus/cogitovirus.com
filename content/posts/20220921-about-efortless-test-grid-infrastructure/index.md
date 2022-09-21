@@ -59,7 +59,7 @@ What's also cool about Selenoid is that the **setup and upgrades are a piece of 
 
 ## *Post Scriptum*
 
-Originally, this post was supposed to be about how to set up your Selenoid grid in the cloud. When I redid the steps, I realized I forgot it's not rocket science and that I would end up copying the commands from the official site to the post here. So instead, let me just provide you with some additional pointers on how to set up Selenoid and avoid having to apply any corrections afterward:
+Originally, this post was supposed to be about how to set up your Selenoid grid in the cloud. When I redid the steps, I realized I forgot it's not exactly rocket science and that I would end up copying the commands from the official site to the post here. So instead, let me just provide you with some additional pointers on how to set up Selenoid and avoid having to apply any corrections afterward:
 * Check, whether your cloud provider has a ready-to-go image for Selenoid available (I know at least GCP does)
 * **When creating your VM from scratch, use a regular Linux base image**, not any container optimized one While it has 'optimized container service' and Selenoid runs everything in docker, you might end up not having useful command line utilities like find/grep/apt/wget
 * Setup on the VM is easy. Install docker & download the Selenoid configuration manager. Follow the official docs to set the browser types, their amount, video recording, VNC, or whatever you need

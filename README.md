@@ -11,7 +11,12 @@ First build the site with
 ```
 ./build.sh
 ```
-Then deploy using firebase:
+TODO: Then deploy using firebase:
+check if everything looks good locally
 ```
-TODO: https://firebase.google.com/docs/hosting/?authuser=0#implementation_path
+firebase emulators:start (this has messed up references)
+```
+push
+```
+firebase deploy --only hosting
 ```
