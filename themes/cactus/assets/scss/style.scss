@@ -43,12 +43,6 @@ body {
   min-height: 100%;
   overflow-wrap: break-word;
 
-  p {
-    @include hyphens(auto);
-  }
-  code {
-    @include hyphens(manual);
-  }
   a {
     color: $color-text;
     text-decoration: none;
