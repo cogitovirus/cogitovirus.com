@@ -1,8 +1,10 @@
 ---
 author: "wzolni"
 title: "Book Report: Deep Work by Cal Newport"
+description: "The ability to focus is a powerful skill. Especially in modern times, where various applications always seem to try to attract, divert and sell our attention to the highest bidder."
 date: 2022-06-17
 draft: false
+keywords: ["how can I focus", "how to get work done", "deep work", "book review"]
 tags: [
     "Book Report",
     "Deep Work",

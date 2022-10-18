@@ -1,13 +1,12 @@
 ---
 author: "wzolni"
 title: "About effortless UI test grid infrastructure"
+description: "Article describing different types of available UI test grid projects. Both paid & open-source"
 date: 2022-09-21
 draft: false
+keywords: ["Which test grid is the best", "test automation grid comparison", "selenoid", "test grid", "test automation" ]
 tags: [
-    "Selenoid",
-    "Test Automation",
-    "E2E tests",
-    "Test Grid"
+    "Test Automation"
 ]
 ---
 
@@ -22,7 +21,7 @@ I've dealt with various implementations of UI test grids and it hasn't been exac
 
 ## Docker Selenium
 
-The first obvious candidate was [Docker Selenium](https://github.com/SeleniumHQ/docker-selenium). The official grid project that's maintained by the Selenium dev team. 
+The first obvious candidate was [Docker Selenium](https://github.com/SeleniumHQ/docker-selenium). The official grid project that's maintained by the Selenium dev team.
 
 After reviewing the documentation, I started to create a prototype and tried a couple of suggested docker-compose setups. But after a few days, frustration started to build up.
 **It takes a lot of trial & error to piece together a grid with just a couple of open sessions with video recording and what I had felt volatile**. Adding additional pieces required going deep into the grid internals, reviewing documentation again & again, and not only for the grid itself but also for docker & docker-compose to understand how I can sew it all together. I don't know why I should ever care about Routers, Event Bus, Sessions Maps, Sessions Queues, etc. Unfortunately, if you want a bit more custom, dynamic and fancy solution, you do need to understand how those components work together.
@@ -53,7 +52,7 @@ What's also cool about Selenoid is that the **setup and upgrades are a piece of 
 
 ## Summary
 
-**To summarize**, Selenoid stands out at this point as the best open-source test grid infrastructure project. Speed was never an issue, and in fact, it stands out as one of the fastest grids I know of, with an ability to provision a test-ready browser in seconds, that runs like in a local environment. An open-source model with a paid option that adds more flexibility and removes maintenance costs, is extremely reasonable.  I'm sure it will not only pay off to the dev team but also guarantees the project's success due to accessibility to all community members. 
+**To summarize**, Selenoid stands out at this point as the best open-source test grid infrastructure project. Speed was never an issue, and in fact, it stands out as one of the fastest grids I know of, with an ability to provision a test-ready browser in seconds, that runs like in a local environment. An open-source model with a paid option that adds more flexibility and removes maintenance costs, is extremely reasonable.  I'm sure it will not only pay off to the dev team but also guarantees the project's success due to accessibility to all community members.
 
 ## *Post Scriptum*
 
