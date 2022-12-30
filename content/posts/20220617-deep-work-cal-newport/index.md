@@ -7,8 +7,7 @@ draft: false
 keywords: ["how can I focus", "how to get work done", "deep work", "book review"]
 tags: [
     "Book Report",
-    "Deep Work",
-    "books"
+    "Productivity",
 ]
 ---
 
