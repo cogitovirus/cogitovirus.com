@@ -18,7 +18,7 @@ Below you can find a detailed explanation of how this feature works and why you 
 
 ## Why even bother?
 
-Web applications often rely on additional services (like a REST API) to dynamically load the required data. When a test fails, those services might be the root cause of the fault (an example would be a malformed request or a straight-up 500 response from the service).
+Web applications often rely on additional services (like a REST API) to dynamically load the required data. When a test fails, those services often are the root cause of the fault (an example would be a malformed request or a straight-up 500 response from the service).
 
 Being able to quickly identify the cause of a failure with information available at hand (logs of a failed script) is one of the core competencies of an automation engineer. Having to manually reproduce the steps might take hours, which won't work if your team is following any of the *"Lean"* or *"Agile"* practices.
 
@@ -111,11 +111,11 @@ async function logBrowserConsoleErrors(driver) {
   });
 }
 ```
-**Note:** In our caps we've chosen only the SEVERE logs so we'll get only those.
+> **Note:** In our caps we've chosen only the SEVERE logs so we'll get only those.
 
 ## Scraping in action
 
-Now, let's write a simple page along with a test to see how the functionality works.
+Now, let's write a simple page along with a test to see how this functionality works.
 
 ### Web server
 
