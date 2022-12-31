@@ -38,6 +38,8 @@ weight = 4
   showAllPostsOnHomePage = false
   postsOnHomePage = 5
   showProjectsList = false
+  rss = true
+
 
 [[params.social]]
   name = "linkedin"
