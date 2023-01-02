@@ -4,7 +4,7 @@
     {{ .Site.Params.description | $.Page.RenderString }}
   {{ end }}
   {{ if .Site.Params.social }}
-      <p>If you would like to connect, find me on
+      <p>If you would like to stay in touch or get notifications about new content, follow me on
       {{ $length := (len .Site.Params.social) }}
       {{ range $index, $elem := .Site.Params.social}}
       {{ if eq $elem.name "email" }}
