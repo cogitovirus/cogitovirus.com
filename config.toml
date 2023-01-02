@@ -38,6 +38,7 @@ weight = 4
   showAllPostsOnHomePage = false
   postsOnHomePage = 5
   showProjectsList = false
+  showReadTime = true
   rss = true
 
 
