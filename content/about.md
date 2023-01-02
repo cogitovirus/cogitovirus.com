@@ -15,7 +15,7 @@ Personally, I am an enthusiast of an active lifestyle, so if I'm not currently t
 
 **My life aspiration at this point is to systematically create things - software, articles, DIY projects, and others**. The transition from consuming content to creating content is my main hurdle at the present time.
 
-If you wish to follow me on this journey, I encourage you to follow me on [Linkedin](https://www.linkedin.com/in/cogitovirus) or [Twitter](https://twitter.com/cogitovirus3). I don't post there often. Usually, it's just a notification about a new article or a project retrospective.
+If you wish to come with me on this journey, I encourage you to follow me on [Linkedin](https://www.linkedin.com/in/cogitovirus) or [Twitter](https://twitter.com/cogitovirus3). I don't post there often. Usually, it's just a notification about a new article or a project retrospective.
 
 Thanks again for visiting. I hope to see you again. Don't be a stranger anymore!
 
