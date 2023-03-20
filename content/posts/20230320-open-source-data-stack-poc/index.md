@@ -169,7 +169,7 @@ After trying dbt out, I can't say a bad word about it. I'm actually quite impres
 One thing that I learned to definitely keep an eye on is full overwrite vs incremental materialization types. With the former being the default. It doesn't really matter with a simple project here, but with hundreds of gigabytes of data coming in, rebuilding all your tables from scratch every time is a close equivalent of sending a cash donation to Amazon AWS.
 
 ## Orchestration
-Here comes the glue that stitches it all together. Dagster is a data orchestration engine where you can define dependencies between your defined tasks, make sure the whole flows are executed on a given schedule, and you can troubleshoot any problems in the process. What's nice in our case is that for dbt and Airbyte, we can import our ops - as Dagster calls it - in batch.
+Here comes the glue that sticks it all together. Dagster is a data orchestration engine where you can define dependencies between your defined tasks, make sure the whole flows are executed on a given schedule, and you can troubleshoot any problems in the process. What's nice in our case is that for dbt and Airbyte, we can import our ops - as Dagster calls it - in batch.
 ```py
 # gcs_modern_data_stack/__init__.py
 dbt_assets = load_assets_from_dbt_project(
