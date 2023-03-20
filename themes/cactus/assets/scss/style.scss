@@ -93,6 +93,13 @@ body {
     }
   }
 }
+
+// TODO: utra quick hack - organize
+.post-item > span > a {
+  background-image: none;
+}
+
+
 @media (min-width: 540px) {
   .image-wrap {
     flex-direction: row;
