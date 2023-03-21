@@ -19,16 +19,16 @@ In this article, we'll walk through a proof of concept implementation of a "mode
 
 with **Google BigQuery** acting as a data warehouse (possible to use Databricks, Snowflake or others as well).
 
-The source data is the same as in [Jaffle Shop](https://github.com/dbt-labs/jaffle_shop) dbt example project, as this article is strictly about setting up and integrating our components rather than modeling an actual business case.
+The source data is the same as in [Jaffle Shop](https://github.com/dbt-labs/jaffle_shop) dbt example. This project is primarily about integrating our components rather than modeling an actual business case.
 
-**The finished code is available in [this GitHub repo](https://github.com/cogitovirus/gcs-modern-data-stack), along with instructions on how to set it up on your localhost.**
+**The complete code is available in [this GitHub repo](https://github.com/cogitovirus/gcs-modern-data-stack), along with instructions on how to set it up on your localhost.**
 
 In the sections below you'll find details about how the project is structured and my subjective opinion on the tools it's based on.
 
 Let's jump into it!
 
 ## Data flow
-Our case is the following. We have three distinct files that will land in an AWS S3 bucket.
+Our case is the following. We have three distinct files that will land in an AWS S3 bucket:
 
 ```sh
 jaffle_shop/
@@ -39,23 +39,21 @@ jaffle_shop/
 
 Those files will be picked up by Airbyte, which will detect their schemas and load the raw data into Google BigQuery tables.
 
-After that, dbt - using the created tables, will run data quality checks, create staging views of our data and finally, execute a SQL business logic to materialize a 'fact' orders table and a consumer 'dimension' table.
+After that, dbt, using the created tables, will run data quality checks, create staging views of our data and finally, execute a SQL business logic to materialize a 'fact' orders table and a consumer 'dimension' table.
 
 Dagster serves here as an orchestrator that will allow us to trigger and monitor the process.
 
-The finished data flow will look like this:
+The finished data flow will look as follows:
 ![Alt text](Global_Asset_Lineage.svg)
 
 ## Data ingestion
-The first step of our data flow is serviced by Airbyte. This tool stands out as one of the most popular "data movement" platform, with over 10 000+ stars on GitHub and a catalog of 300+ pre-build connectors.
+The first step of our data flow is controlled by Airbyte, which stand out as one of the most popular “data movement” platform, with over 10.000+ stars on GitHub and a catalog of 300+ pre-build connectors.
 
-**Interestingly enough**, Google Cloud Storage source is not among them. I would have thought that SFTP, S3, GCS, and whatever Azure is doing would be among the top most important source connections, but apparently, Poke-API and CoinGecko Coins connector was higher on the priority list. I guess that's just how it is with community-driven projects.
+**Interestingly enough**, Google Cloud Storage source is not among them. I would have thought that SFTP, S3, GCS, and whatever storage Azure is doing, would be among the essential source connections. Apparently, Poke-API and CoinGecko Coins connector was higher on the priority list. I guess that’s just how it is with community-driven projects.
 
-That's one of the many reasons why I have mixed feeling about Airbyte. It started with problems with setting it up manually, then came the realization of how UI-heavy it is and that it doesn't have a formal [public API](https://docs.airbyte.com/api-documentation/) that you can interact with. There's also a lack of possibility to keep the configuration as code, other than reverse engineering their API, with [Octavia CLI](https://github.com/airbytehq/airbyte/tree/master/octavia-cli) in the 'alfa' stage, coming to ease this problem.
+That's one of the many reasons why I have mixed feeling about Airbyte. It started with problems with setting it up manually, then came the realization of how UI-heavy it is and that it doesn't have a formal [public API](https://docs.airbyte.com/api-documentation/) that you can interact with. There's also a lack of possibility to keep the configuration as code, other than reverse engineering their API, with [Octavia CLI](https://github.com/airbytehq/airbyte/tree/master/octavia-cli) in the 'alfa' stage, coming to ease this problem. I also had trouble finding any solid benchmarks of how Airbyte performs in production and the ones I found were not encouraging. With little solid proof of how performant it is, I don't know if I would trust it to work on an 'enterprice' level with hundreds of source files, big or small.
 
-I also had trouble finding any solid benchmarks of how Airbyte performs in production and the ones I found were not encouraging. With little solid proof of how performant it is, I don't know if I would trust it to work on an 'enterprice' level with hundreds of source files, big or small.
-
-In my demo project, my whole Airbyte configuration is automated under `gcs_modern_data_stack/utils/setup_airbyte.py` with a couple reverse-engineered REST API calls that will set up our three sources (each for every file schema), destination (pointing to the BigQuery schema) and connection between those (that define the schedule, type of replication and give you access to past executions). An example POST call to create the BigQuery destination:
+In my demo project, my whole Airbyte configuration is automated under `gcs_modern_data_stack/utils/setup_airbyte.py` with a couple of reverse-engineered REST API calls that will set up our three sources (each for every file schema), destination (pointing to the BigQuery schema) and connection between those (that define the schedule, type of replication and give you access to past executions). An example POST call to create a BigQuery destination looks like this:
 ```python
 # gcs_modern_data_stack/utils/setup_airbyte.py
     destination_id = _safe_request(
@@ -129,7 +127,7 @@ with customers as (
 
 select * from customers
 ```
-which finally serves as a source to a final trusted table defined in `models/trusted/dim_customers.sql`
+which finally serves as a source to the final trusted table defined in `models/trusted/dim_customers.sql`
 
 ```sql
 -- dbt_project/models/trusted/dim_customers.sql
@@ -169,7 +167,7 @@ After trying dbt out, I can't say a bad word about it. I'm actually quite impres
 One thing that I learned to definitely keep an eye on is full overwrite vs incremental materialization types. With the former being the default. It doesn't really matter with a simple project here, but with hundreds of gigabytes of data coming in, rebuilding all your tables from scratch every time is a close equivalent of sending a cash donation to Amazon AWS.
 
 ## Orchestration
-Here comes the glue that sticks it all together. Dagster is a data orchestration engine where you can define dependencies between your defined tasks, make sure the whole flows are executed on a given schedule, and you can troubleshoot any problems in the process. What's nice in our case is that for dbt and Airbyte, we can import our ops - as Dagster calls it - in batch.
+Here comes the glue that sticks it all together. Dagster is a data orchestration engine where you can define dependencies between your defined tasks, make sure the whole flows are executed on a given schedule, and troubleshoot any problems in the process. What’s nice in our case is that for dbt and Airbyte, we can import our ops - as Dagster calls it - in batch.
 ```py
 # gcs_modern_data_stack/__init__.py
 dbt_assets = load_assets_from_dbt_project(
@@ -192,7 +190,7 @@ defs = Definitions(
     ],
 )
 ```
-As you can see, given the dbt project folder and a profile, the whole dbt project is loaded as an asset in one line. In theory, you could do the same with Airbyte, but it turns out you might encounter a bit of a mismatch, due to different namespaces (one of our dbt models is under `stripe/`, and the rest are `jaffle_shop/`). This created a surprising amount of problems the align the dependencies between dbt and Airbyte properly. What I ended up doing is separating Airbyte assets into their own module where they are loaded individually - precisely how I would like them to:
+As you can see, given the dbt project location and profile, the entire project is loaded as an asset in one line. In theory, you could do the same with Airbyte though you might encounter a namespace conflict. Our dbt assets have different namespaces (one of the models is under `stripe/`, and the rest are `jaffle_shop/`), which created a surprising amount of problems with aligning the dependencies. What I ended up doing is separating Airbyte assets into their module where they are loaded individually - precisely how I would like them to:
 ```py
 # gcs_modern_data_stack/assets/airbyte/__init__.py
 customers_assets = build_airbyte_assets(
@@ -220,7 +218,7 @@ After finishing the local setup, described in the [readme](https://github.com/co
 ```sh
 dagster dev
 ```
-to play around in the dagster UI.
+and play around in the dagster UI.
 
 ![Dagster UI](dagster_ui.PNG)
 
@@ -235,9 +233,7 @@ I can say I'm pleased with the whole Dagster experience and would definitely wan
 ## Summary
 I hope you will find the time to check out the repository and try out the tools on your own. I think it's a good starter to get some feel for those tools. If you are looking for a more step-by-step project, the [dbt fundementals](https://courses.getdbt.com/courses/fundamentals) course will take you through the Jaffle Shop setup I used here as a starter. Dagster also has plenty of examples of integration projects posted [here](https://github.com/dagster-io/dagster/tree/master/examples).
 
-As for me, as a next step, I would like to test how performant dbt actually is compared to PySpark and Spark on Scala.
-
-Another item to investigate, in terms of data quality checks, would be a tool that supplements the lack of generic tests in dbt (which only has 4, `unique`, `not_null`, `accepted_values`, and `relationships`) I would like to set something more complex for quality and profiling with PySpark and [deequ](https://github.com/awslabs/python-deequ).
+As for me, as a next step, I would like to test how performant dbt actually is compared to PySpark and Spark on Scala. Another item to investigate, in terms of data quality checks, would be a tool that supplements the lack of generic tests in dbt (which only has 4, `unique`, `not_null`, `accepted_values`, and `relationships`) I would like to set something more complex for quality and profiling with PySpark and [deequ](https://github.com/awslabs/python-deequ).
 
 
 Thanks for reading and see you next time around!
