@@ -1,7 +1,7 @@
 ---
 author: "wzolni"
-title: "Buidling an open source data stack POC with Dagster, Airbyte and dbt"
-description: "Article on how to build a data stack project with Dagster, Airbyte and dbt. Includes a finished GitHub project, explanation about how the code is structured and a subjective assesment of the used tools"
+title: "Building an open source data stack POC with Dagster, Airbyte, and dbt"
+description: "Article on how to build a data stack project with Dagster, Airbyte, and dbt. Includes a finished GitHub project, explanation about how the code is structured and a subjective assesment of the used tools"
 date: 2023-03-20
 draft: false
 keywords: ["Data Engineering", "Dagster Airbyte DBT project", "Dagster Airbyte DBT POC", "modern data stack" ]
