@@ -20,3 +20,5 @@ push
 ```
 firebase deploy --only hosting
 ```
+## TODO:
+- [ ] flexbox for mobile header
