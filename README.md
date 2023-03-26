@@ -1,5 +1,5 @@
 # cogitovirus.com
-Personal blog written in hugo.
+Personal blog written in hugo with [cactus theme](https://github.com/monkeyWzr/hugo-theme-cactus) as a base template and sligth retouches on top of it.
 
 ## run locally
 ```
