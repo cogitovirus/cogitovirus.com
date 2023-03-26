@@ -8,7 +8,7 @@ keywords: ["Which test grid is the best", "test automation grid comparison", "se
 tags: [
     "Test Automation"
 ]
-promoLink: "www.midjourney.com"
+promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
 

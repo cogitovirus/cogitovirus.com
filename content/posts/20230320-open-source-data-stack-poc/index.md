@@ -8,7 +8,7 @@ keywords: ["Data Engineering", "Dagster Airbyte DBT project", "Dagster Airbyte D
 tags: [
     "Data Engineering"
 ]
-promoLink: "www.midjourney.com"
+promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
 

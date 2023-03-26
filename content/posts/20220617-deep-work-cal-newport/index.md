@@ -9,7 +9,7 @@ tags: [
     "Book Report",
     "Productivity",
 ]
-promoLink: "www.midjourney.com"
+promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
 ## The deep life
