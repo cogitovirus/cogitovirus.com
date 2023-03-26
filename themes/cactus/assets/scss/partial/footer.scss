@@ -1,7 +1,7 @@
 #footer {
-  position: fixed;
-  bottom: 0;
+  padding-bottom: 1.5em;
   margin-bottom: 10px;
+  margin-top: auto;
   width: 100%;
   color: $color-meta;
   vertical-align: top;
@@ -53,7 +53,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-bottom: 20px;
 
     .footer-left {
       align-self: flex-start;

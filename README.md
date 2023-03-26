@@ -22,3 +22,4 @@ firebase deploy --only hosting
 ```
 ## TODO:
 - [ ] flexbox for mobile header
+- [ ] bug with the relative footer on mobile
