@@ -9,7 +9,10 @@ tags: [
     "Book Report",
     "Productivity",
 ]
+promoLink: "www.midjourney.com"
+promoAuthor: "Midjourney AI"
 ---
+## The deep life
 
 The ability to focus is a powerful skill. Especially in modern times, where various applications always seem to try to attract, divert and sell our attention to the highest bidder.
 
@@ -40,7 +43,7 @@ After completing the book, I've started to implement the techniques I've learned
 
 This allows me to keep a laser focus on the tasks, that in the long term bring the most value. The ones that will bring satisfaction to your life.
 
-**Post Scriptum**
+## Post Scriptum
 
 One last great thing that came after reading Cal's Newport book, is that I started to look for quality music for concentration.
 I don't always like listening to music while doing long stretches of work, but there are certain pieces, that induce a stake of flow, zen, or whatever you want to call it. That's how I have found [this gem](https://open.spotify.com/playlist/1y8TGPY5GqXY9YjqKkHdIb?si=X77GirWbTXOnXYWMIE1IoA).

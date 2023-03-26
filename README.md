@@ -1,7 +1,7 @@
 # cogitovirus.com
 Personal blog written in hugo.
 
-## local
+## run locally
 ```
 hugo server
 ```

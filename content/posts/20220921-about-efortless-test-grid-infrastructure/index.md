@@ -8,7 +8,11 @@ keywords: ["Which test grid is the best", "test automation grid comparison", "se
 tags: [
     "Test Automation"
 ]
+promoLink: "www.midjourney.com"
+promoAuthor: "Midjourney AI"
 ---
+
+## Introduction
 
 I've dealt with various implementations of UI test grids and it hasn't been exactly a joy ride. In the middle of 2021, again, I needed to set up a new grid for my QA team. It would replace [Zalenium](https://github.com/zalando/zalenium/), a decent open-source stack that unfortunately wasn't maintained anymore.
 

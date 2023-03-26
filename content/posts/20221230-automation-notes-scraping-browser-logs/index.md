@@ -8,6 +8,8 @@ keywords: ["Chrome logs scraper", "Selenium chrome logs", "Selenium logging", "t
 tags: [
     "Test Automation"
 ]
+promoLink: "www.midjourney.com"
+promoAuthor: "Midjourney AI"
 ---
 
 ## Summary

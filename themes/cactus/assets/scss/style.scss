@@ -38,10 +38,37 @@ body {
 
 .content {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-height: 100%;
   overflow-wrap: break-word;
+
+  figure {
+    max-width: 45%;
+    margin-top: 3.2em;
+    margin-left: 1em;
+    float: right;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid black;
+      background-color: black;
+
+    }
+  }
+
+  // IMAGES
+
+  figcaption {
+    font-size: 0.6rem;
+    text-align: right;
+    color: #ABABAB;
+
+    a,
+    a:visited {
+      color: #ABABAB;
+    }
+  }
 
   a {
     color: $color-text;
@@ -53,6 +80,7 @@ body {
       background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link);
     }
   }
+
   a.icon {
     background: none;
 
@@ -60,6 +88,7 @@ body {
       color: $color-link;
     }
   }
+
   h1 a,
   .h1 a,
   h2 a,
@@ -71,6 +100,7 @@ body {
     color: inherit;
     text-decoration: none;
   }
+
   h1 a:hover,
   .h1 a:hover,
   h2 a:hover,
@@ -80,6 +110,7 @@ body {
   h6 a:hover {
     @include underline(6px, $color-link);
   }
+
   h6 {
     a {
       background: none;
@@ -87,6 +118,7 @@ body {
       text-decoration: none;
     }
   }
+
   h6 {
     a:hover {
       @include underline(6px, $color-link);
@@ -95,7 +127,7 @@ body {
 }
 
 // TODO: utra quick hack - organize
-.post-item > span > a {
+.post-item>span>a {
   background-image: none;
 }
 
@@ -109,19 +141,36 @@ body {
       flex: 1 0 35%;
       margin-right: 2rem;
     }
+
     p {
       flex: 1 0 65%;
     }
   }
 }
+
 .max-width {
   max-width: $page-width;
 }
-@media (max-width: 480px) {  // smaller margins at smaller screen widths
+
+@media (max-width: 480px) {
+
+  // full width promo image on mobile
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    figure {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  // smaller margins at smaller screen widths
   .px3 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+
   .my4 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -199,7 +248,7 @@ code {
 
 .highlight {
 
-  & > div {
+  &>div {
     border-radius: 2px;
     -webkit-border-radius: 2px;
   }
