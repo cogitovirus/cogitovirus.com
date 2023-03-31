@@ -220,7 +220,7 @@ After finishing the local setup, described in the [readme](https://github.com/co
 ```sh
 dagster dev
 ```
-and play around in the dagster UI.
+and play around in the Dagster UI.
 
 ![Dagster UI](dagster_ui.PNG)
 
