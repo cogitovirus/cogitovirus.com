@@ -7,7 +7,7 @@ draft: false
 
 **Hi there, stranger!**
 
-My name is Wiktor. I'm a QA engineering expert with over eight years of experience in the IT industry.
+My name is Wiktor. I'm a Quality engineering expert with over eight years of experience in the IT industry.
 
 This website is my personal blog, where I write about engineering, quality, automation, data science, and other topics I'm interested in.
 

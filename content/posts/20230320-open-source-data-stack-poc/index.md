@@ -224,7 +224,7 @@ and play around in the Dagster UI.
 
 ![Dagster UI](dagster_ui.PNG)
 
-You can materialize all assets, drop a new modified file and setup a schedule to kick off a run, or break something intentially and see how dagster deals with errors.
+You can materialize all assets, drop a new modified file and setup a schedule to kick off a run, or break something intentionally and see how Dagster deals with errors.
 
 One last thing to do after the successful run is to manually query and inspect if our tables were created in BigQuery.
 
@@ -235,7 +235,7 @@ I can say I'm pleased with the whole Dagster experience and would definitely wan
 ## Summary
 I hope you will find the time to check out the repository and try out the tools on your own. I think it's a good starter to get some feel for those tools. If you are looking for a more step-by-step project, the [dbt fundementals](https://courses.getdbt.com/courses/fundamentals) course will take you through the Jaffle Shop setup I used here as a starter. Dagster also has plenty of examples of integration projects posted [here](https://github.com/dagster-io/dagster/tree/master/examples).
 
-As for me, as a next step, I would like to test how performant dbt actually is compared to PySpark and Spark on Scala. Another item to investigate, in terms of data quality checks, would be a tool that supplements the lack of generic tests in dbt (which only has 4, `unique`, `not_null`, `accepted_values`, and `relationships`) I would like to set something more complex for quality and profiling with PySpark and [deequ](https://github.com/awslabs/python-deequ).
+As for me, as a next step, I would like to test how performant dbt actually is compared to PySpark and Spark on Scala. Another item to investigate, in terms of data quality checks, would be a tool that supplements the lack of generic tests in dbt (which only has 4, `unique`, `not_null`, `accepted_values`, and `relationships`). I would like to set something more complex for quality and profiling with PySpark and [deequ](https://github.com/awslabs/python-deequ).
 
 
 Thanks for reading and see you next time around!
