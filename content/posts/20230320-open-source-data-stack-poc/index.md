@@ -11,7 +11,6 @@ tags: [
 promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
-
 ## Introduction
 
 In this article, we'll walk through a proof of concept implementation of a "modern" data stack. The project is based on the following open-source technologies:
