@@ -11,7 +11,6 @@ tags: [
 promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
-## The Art of Not Reading
 
 I'm writing this post from a hospital bed. Not close to dying in any way, but recuperating from a couple of worst days in my life.
 
