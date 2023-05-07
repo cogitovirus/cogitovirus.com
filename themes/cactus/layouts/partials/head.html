@@ -5,7 +5,13 @@
   <title>{{ if .IsPage }} {{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <link rel = 'canonical' href = '{{ .Permalink }}'>
   <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.Description }}{{ else }}{{ .Params.description }} | {{ .Site.Title }}{{ end }}"/>
-  <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", "}}{{ end }}" />
+  <!-- <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", "}}{{ end }}" /> -->
+
+  {{ if .IsHome }}
+    <meta name="keywords" content="{{ with .Site.Params.keywords }}{{ delimit . ", "}}{{ end }}">
+    {{ else }}
+    <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", "}}{{ end }}">
+  {{ end }}
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ template "_internal/opengraph.html" . }}

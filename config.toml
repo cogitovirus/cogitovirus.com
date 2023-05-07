@@ -32,6 +32,7 @@ weight = 4
 
 [params]
   colortheme = "classic"
+  keywords = ["personal website", "test automation", "data engineering", "engineering"]
   description = "A personal website about work, engineering and stuff."
   mainSection = "posts"
   mainSectionTitle = "Blog"
