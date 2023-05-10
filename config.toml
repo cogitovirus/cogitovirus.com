@@ -4,7 +4,6 @@ title = 'cogitovirus.com'
 
 theme = 'cactus'
 
-googleAnalytics = "G-F6QNNGB76R"
 enableRobotsTXT = true
 
 [sitemap]
@@ -32,6 +31,7 @@ weight = 4
 
 [params]
   colortheme = "classic"
+  GoogleAnalyticsID = "G-F6QNNGB76R"
   keywords = ["personal website", "test automation", "data engineering", "engineering"]
   description = "A personal website about work, engineering and stuff."
   mainSection = "posts"
