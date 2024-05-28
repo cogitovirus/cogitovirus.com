@@ -7,9 +7,9 @@ draft: false
 
 **Hi there, stranger!**
 
-My name is Wiktor. I'm a Software Engineer with ten eight years of experience in the IT industry.
+My name is Wiktor. I'm a Software Architect with over eight years of experience in the IT industry.
 
-This website is my personal blog, where I write about engineering, quality, automation, data science, and other topics I'm interested in.
+This website is my personal blog, where I write about AI, quality, engineering, data science, and other topics I'm interested in.
 
 Personally, I am an enthusiast of an active lifestyle, so if I'm not currently training my brain cells in front of a computer, you'll probably find me working out at the local gym or on a walk with my dog Gofer (*in English: Waffle*).
 
