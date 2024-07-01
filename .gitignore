@@ -10,3 +10,4 @@ test/playwright-report/
 test/playwright/.cache/
 
 firebase-debug.log
+.DS_Store
