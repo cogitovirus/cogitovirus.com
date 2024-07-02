@@ -32,8 +32,8 @@ weight = 4
 [params]
   colortheme = "classic"
   GoogleAnalyticsID = "G-F6QNNGB76R"
-  keywords = ["personal website", "test automation", "data engineering", "engineering"]
-  description = "A personal website about work, engineering and stuff."
+  keywords = ["personal website", "quality", "data engineering", "engineering", "AI", "data science"]
+  description = "A personal website about AI, quality, data science, engineering and stuff."
   mainSection = "posts"
   mainSectionTitle = "Blog"
   showAllPostsOnHomePage = false
