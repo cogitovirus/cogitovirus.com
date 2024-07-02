@@ -223,6 +223,12 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  #header #title h1 {
+    font-size: 0.9em;
+  }
+}
+
 @import "partial/header";
 @import "partial/post/actions_desktop";
 @import "partial/post/actions_mobile";
