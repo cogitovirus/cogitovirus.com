@@ -3,7 +3,6 @@
 ## Tasks
 
 - [ ] cookie warning
-- [ ] fixes of sso based on a raport
 - [ ] favicon based on new logo design
 - [ ] new logo design
 
