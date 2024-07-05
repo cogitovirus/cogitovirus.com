@@ -118,6 +118,6 @@ Be part of the data revolution with Data Spectre:
 1. Star my [GitHub](https://github.com/cogitovirus/uhpldc-ms) repository to show your support and stay updated on my open-source components.
 2. Join the waitlist at [dataspectra.cogitovirus.com](dataspectra.cogitovirus.com) for early access and exclusive beta testing opportunities.
 3. Subscribe to cogitovirus updates and follow my social media channels for insightful content, webinars, and community events.
-4. Engage with our community on forums and social media to share your data processing challenges and collaborate on solutions.
+4. Engage with our community on [forums](https://discord.gg/KsrnEms4) and [social media](https://www.linkedin.com/company/17933351) to share your data processing challenges and collaborate on solutions.
 
 Don't just witness the future of data processing—help shape it with Data Spectre. Your insights and feedback are crucial as we continue to evolve this groundbreaking platform. Join us in redefining what's possible in the world of data!
