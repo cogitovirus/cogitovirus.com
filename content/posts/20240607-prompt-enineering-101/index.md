@@ -3,7 +3,7 @@ author: "wzolni"
 title: "Prompt Engineering 101"
 description: "This post describes the evolution of the author's approach to using concise and specific prompts with GPT-4 to improve coding efficiency and effectiveness."
 date: 2024-06-07
-draft: false
+draft: true
 keywords: ["Prompt Engineering", "AI-Assisted Coding", "Coding Efficiency"]
 tags: [
     "AI"

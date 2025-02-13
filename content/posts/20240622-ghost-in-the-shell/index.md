@@ -3,7 +3,7 @@ author: "wzolni"
 title: "Ghost in the Shell"
 description: "This blog post discusses the critical importance of Proof of Personhood (PoP) technology in combating the growing threat of AI-powered digital deception and impersonation online, emphasizing its potential to safeguard digital interactions and urging readers to engage with and support this emerging technology."
 date: 2024-06-22
-draft: false
+draft: true
 keywords: ["AI", "Proof of Personhood", "Doxxing", "Sybil attack", "World Coin"]
 tags: [
     "AI",

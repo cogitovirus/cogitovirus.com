@@ -3,7 +3,7 @@ author: "wzolni"
 title: "Bytes and Compounds: Bridging Chemistry and Computer Science with DataSpectra"
 description: "Data Spectre is a revolutionary AI-powered data processing platform that combines high-performance data chromatography, mass spectrometry, and blockchain technology. It offers 24/7 RAG data engineers, Corda blockchain integration for security and transparency, advanced analytics with pySpark and PyTorch on Azure, and a hybrid cloud architecture. The platform aims to outperform existing data processing tools by providing a comprehensive, AI-driven solution for various industries, from finance to healthcare."
 date: 2024-07-05
-draft: false
+draft: true
 keywords: [
     "ai", "data spectra", "data engineering", "data processing", "airflow", "dagster", "kestra", "aws glue", "dbt", "nifi"
     ]
