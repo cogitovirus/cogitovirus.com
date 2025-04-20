@@ -7,17 +7,19 @@ draft: false
 
 **Hi there, stranger!**
 
-My name is Wiktor. I'm a Software Architect with over eight years of experience in the IT industry.
+My name is Wiktor Żołnierowicz. I'm a software engineer.
 
-This website is my personal blog, where I write about AI, quality, engineering, data science, and other topics I'm interested in.
+This is my personal blog — a creative outlet where I share whatever I’m currently obsessed with, from ideas and experiments to thoughts in progress.
 
-Personally, I am an enthusiast of an active lifestyle, so if I'm not currently training my brain cells in front of a computer, you'll probably find me working out at the local gym or on a walk with my dog Gofer (*in English: Waffle*).
+-----
 
-**My life aspiration at this point is to systematically create things - software, articles, DIY projects, and others**. The transition from consuming content to creating content is my main hurdle at the present time.
+**What drives me is systematically creating things — whether it’s building software, writing something meaningful, or crafting hands-on projects. There’s a deep sense of satisfaction in turning ideas into reality, one *commit* at a time.**
 
-If you wish to come with me on this journey, I encourage you to follow me on [Linkedin](https://www.linkedin.com/in/cogitovirus) or [Twitter](https://twitter.com/cogitovirus3). I don't post there often. Usually, it's just a notification about a new article or a project retrospective.
+-----
 
-Thanks again for visiting. I hope to see you again. Don't be a stranger anymore!
+Outside of the digital world, I enjoy staying active. If I’m not coding or exploring new ideas, you’ll probably find me at the gym, training martial arts, or out on a run.
+
+Thanks for stopping by. I hope to see you again. Don't be a stranger!
 
 **Take care!**
 

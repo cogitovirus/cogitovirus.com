@@ -33,7 +33,7 @@ weight = 4
   colortheme = "classic"
   GoogleAnalyticsID = "G-F6QNNGB76R"
   keywords = ["personal website", "quality", "data engineering", "engineering", "AI", "data science"]
-  description = "A personal website about AI, quality, data science, engineering and stuff."
+  description = "A personal site exploring engineering, software, and the future of technology, from algorithms to autonomy."
   mainSection = "posts"
   mainSectionTitle = "Blog"
   showAllPostsOnHomePage = false
@@ -44,16 +44,17 @@ weight = 4
 
 
 [[params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/cogitovirus/"
-
-[[params.social]]
   name = "twitter"
-  link = "https://twitter.com/cogitovirus3"
+  link = "https://x.com/cogitovirus3"
 
 [[params.social]]
   name = "github"
   link = "https://github.com/cogitovirus/"
+
+
+[[params.social]]
+  name = "email"
+  link = "w.zolnierowicz@gmail.com"
 
 
 

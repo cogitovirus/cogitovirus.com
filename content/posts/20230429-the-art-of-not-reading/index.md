@@ -12,8 +12,6 @@ promoLink: "https://www.midjourney.com"
 promoAuthor: "Midjourney AI"
 ---
 
-I'm writing this post from a hospital bed. Not close to dying in any way, but recuperating from a couple of worst days in my life.
-
 Have you ever wondered what you would leave behind if you had died today? A house or an apartment, furniture, books, and electronics, maybe photos of you with your loved ones. What usually comes first to mind are your material possessions.
 
 > Your life in an appropriate-sized box.
