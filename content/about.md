@@ -7,9 +7,7 @@ draft: false
 
 **Hi there, stranger!**
 
-My name is Wiktor Żołnierowicz. I'm a software engineer.
-
-This is my personal blog — a creative outlet where I share whatever I’m currently obsessed with, from ideas and experiments to thoughts in progress.
+My name is Wiktor Żołnierowicz. I’m a software engineer, and this is my space to publish ideas, projects, and essays.
 
 -----
 

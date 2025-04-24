@@ -9,6 +9,9 @@ enableRobotsTXT = true
 [sitemap]
   filename = 'sitemap.xml'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [[menu.main]]
 name = "Home"
 url = "/"
@@ -33,7 +36,7 @@ weight = 4
   colortheme = "classic"
   GoogleAnalyticsID = "G-F6QNNGB76R"
   keywords = ["personal website", "quality", "data engineering", "engineering", "AI", "data science"]
-  description = "A personal site exploring engineering, software, and the future of technology, from algorithms to autonomy."
+  description = "This site is a creative outlet for writing about engineering, software, and whatever hijacks my curiosity."
   mainSection = "posts"
   mainSectionTitle = "Latest posts"
   showAllPostsOnHomePage = false
