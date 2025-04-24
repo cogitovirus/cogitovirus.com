@@ -29,7 +29,7 @@ When an account with 219 million followers interacts with a smaller one — not 
 It’s a form of shadowbanning — not imposed by moderators, but activated by the algorithm in response to a high-weight engagement signal.
 
 
-<img src="/images/20250424-consensus-gone-with-the-wind.png" alt="Dimmed into irrelevance" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto 0.5rem auto;" />
+<img src="https://rook2root.co/20250424-consensus-gone-with-the-wind.png" alt="Dimmed into irrelevance" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto 0.5rem auto;" />
 <p style="font-size: 0.85rem; color: #777; text-align: left; max-width: 800px; margin: 0 auto 2rem auto;">
   Dimmed into irrelevance — Source: 
   <a href="https://www.nytimes.com/interactive/2025/04/23/business/elon-musk-x-suppression-laura-loomer.html" target="_blank" rel="noopener noreferrer">nytimes.com</a>
@@ -39,7 +39,7 @@ On the flip side, the same signal that suppresses can also elevate. When a high-
 
 Even low-effort, repetitive interactions—likes, generic replies—can act like a controlled dose of AstroBoost™ - just enough to simulate momentum and trigger amplification.
 
-<img src="/images/20250424-consensus-interesting.png" alt="Interesting" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto 0.5rem auto;" />
+<img src="https://rook2root.co/20250424-consensus-interesting.png" alt="Interesting" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto 0.5rem auto;" />
 <p style="font-size: 0.85rem; color: #777; text-align: left; max-width: 800px; margin: 0 auto 2rem auto;">
   Interesting — Source: 
   <a href="https://x.com/elonmusk" target="_blank" rel="noopener noreferrer">x.com/elonmusk</a>
