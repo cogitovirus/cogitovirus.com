@@ -13,7 +13,7 @@ promoAuthor: "Midjourney AI"
 ------
 ------
 
-**Note:** This post was mostly AI-generated and is shared for comedic and philosophical entertainment. Take it seriously at your own risk.
+**Warning:** This post was mostly AI-generated and is shared only for comedic and philosophical entertainment. Take it seriously at your own risk.
 
 ------
 
