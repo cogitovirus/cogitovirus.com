@@ -4,43 +4,18 @@
   {{ .Site.Params.description | $.Page.RenderString }}
   {{ end }}
   {{ if .Site.Params.social }}
-  <p><strong>I&#39;m currently building building <a href="https://rook2root.co">rook2root.co</a></strong> &#8208; a project exposing black hat business tactics, dark UX, and backend exploits.</p>
-  <p>Join the <a href="https://cogitovirus.substack.com/about">Substack</a> mailing list to get notified about new
+  <p><strong>I&#39;m currently building building <a href="https://rook2root.co">rook2root.co</a></strong> &#8208; a
+    project exposing black hat business tactics, dark UX, and backend exploits.</p>
+  <p>Join the <a href="https://cogitovirus.substack.com/about" style="color:#A142F4;">Substack</a> mailing list to get notified about new
     posts.</p>
 
-  <p>You can also follow me on
-    {{ $length := (len .Site.Params.social) }}
-    {{ range $index, $elem := .Site.Params.social}}
-    {{ if eq $elem.name "email" }}
-    <!-- <a class="icon" target="_blank" rel="noopener" href="mailto:{{ $elem.link }}" aria-label="Email">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
-        </a> -->
-    {{ else if eq $elem.name "rss" }}
-    <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="RSS">
-      <i class="fas fa-rss" aria-hidden="true"></i>
-    </a>
-    {{ else if eq $elem.name "scholar" }}
-    <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="Google Scholar">
-      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-    </a>
-    {{ else }}
-    <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="{{ $elem.name }}">
-      <i class="fab fa-{{ lower $elem.name }}" aria-hidden="true"></i>
-    </a>
-    {{ end }}
-    {{ if (lt (add $index 2) $length) }}
-    {{- print " and " -}}
-    {{ else if (lt (add $index 1) $length) }}
-    <!-- {{- print " and " -}} -->
-    {{ else }}
-    <!-- {{- print "." -}} -->
-    {{ end }}
-    {{ end }}
-
+  <p>
+    You can also follow me on
+    <a href="https://x.com/cogitovirus3" target="_blank" rel="noopener" style="color:#4285F4;">X</a>,
+    <a href="https://threads.net/@wzolni.png" target="_blank" rel="noopener" style="color:#EA4335;">Threads</a>,
+    <a href="https://github.com/cogitovirus" target="_blank" rel="noopener" style="color:#FBBC05;">GitHub</a>
     or say hi via
-    <a class="icon" target="_blank" rel="noopener" href="mailto:w.zolnierowicz@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope" aria-hidden="true"></i>
-    </a>
+    <a href="mailto:w.zolnierowicz@gmail.com" target="_blank" rel="noopener" style="color:#34A853;">email</a>
     (provided you're a real human and not a sentient marketing bot).
   </p>
 
