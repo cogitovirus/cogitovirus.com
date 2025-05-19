@@ -50,4 +50,12 @@
 
     gtag('config', '{{ .Site.Params.GoogleAnalyticsID }}');
   </script>
+
+  <!-- Stylesheets -->
+  {{- if .Site.Params.colortheme -}}
+    {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{- else -}}
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{- end -}}
 </head>
