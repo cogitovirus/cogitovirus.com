@@ -1,0 +1,13 @@
+public/
+resources/
+.hugo_build.lock
+.firebaserc
+.firebase
+
+test/node_modules/
+test/test-results/
+test/playwright-report/
+test/playwright/.cache/
+
+firebase-debug.log
+.DS_Store

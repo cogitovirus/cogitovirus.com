@@ -1,36 +1,38 @@
-# cogitovirus.com
+# sv
 
-Personal blog written in hugo with [cactus theme](https://github.com/monkeyWzr/hugo-theme-cactus) as a base template and sligth retouches on top of it.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## run locally
+## Creating a project
 
-```sh
-hugo server
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
 ```
 
-## deploy
+## Developing
 
-First build the site with
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```sh
-./build.sh
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-TODO: Then deploy using firebase:
-check if everything looks good locally
+## Building
 
-```sh
-firebase emulators:start (this has messed up references)
+To create a production version of your app:
+
+```bash
+npm run build
 ```
 
-push
+You can preview the production build with `npm run preview`.
 
-```sh
-firebase deploy --only hosting
-```
-
-## TODO
-
-- [ ] bug with low resolution. hamburger/name overlap
-- [ ] flexbox for mobile header
-- [ ] bug with the relative footer on mobile
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
