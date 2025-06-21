@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { docsPath } from '$lib/config';
   import { joinPath } from '$lib/dist/utils';
   import { Search, X } from 'lucide-svelte';
@@ -97,7 +97,7 @@
       </div>
       <div class="overflow-y-auto p-4">
         <!-- svelte-ignore a11y_autofocus -->
-        <input
+        <!-- <input
           type="text"
           class="input border-base-content placeholder:text-base-content/20 focus:focus-within:border-base-content w-full border outline-hidden"
           placeholder="Search"
@@ -120,4 +120,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --> -->

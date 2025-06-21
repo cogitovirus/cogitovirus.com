@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import SEO from '$lib/dist/components/SEO.svelte';
-  import  from '$/components/PostListLayout.svelte';
+  import PostListLayout from '$lib/dist/essays/components/PostListLayout.svelte';
   import BlogContainer from '$lib/dist/essays/components/BlogContainer.svelte';
   import BackToBlog from '$lib/dist/essays/components/BackToBlog.svelte';
 

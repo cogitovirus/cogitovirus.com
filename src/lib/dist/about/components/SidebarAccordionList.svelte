@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import SidebarAccordionList from './SidebarAccordionList.svelte';
   import type { Doc } from '$lib/dist/docs/types';
   import { slugify, joinPath } from '$lib/dist/utils';
@@ -112,4 +112,4 @@
       </li>
     {/if}
   {/each}
-</ul>
+</ul> -->

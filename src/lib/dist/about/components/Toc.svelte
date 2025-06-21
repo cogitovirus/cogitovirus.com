@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { afterNavigate } from '$app/navigation';
   import { Plus, Minus } from 'lucide-svelte';
   import { handleToc } from '$lib/dist/docs/toc';
@@ -43,4 +43,4 @@
   :global(#toc a) {
     text-decoration: none;
   }
-</style>
+</style> -->

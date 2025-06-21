@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import * as config from '$lib/config';
   import { joinPath, serializeSchemaMarkup } from '$lib/dist/utils';
   import SEO from '$lib/dist/components/SEO.svelte';
@@ -35,4 +35,4 @@
 
 <svelte:head>
   {@html serializeSchemaMarkup(docSchema)}
-</svelte:head>
+</svelte:head> -->
