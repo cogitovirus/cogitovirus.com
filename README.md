@@ -1,1 +1,2 @@
-## [Get Started](https://sveltestarterkit.com/docs)
+# cogitovirus.com
+
