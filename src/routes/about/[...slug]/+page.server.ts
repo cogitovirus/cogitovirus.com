@@ -1,0 +1,17 @@
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { error } from '@sveltejs/kit';
+
+export async function load({ params }) {
+  const slug = params.slug || '';
+  const file = slug ? `${slug}.md` : 'index.md';
+  const filePath = path.resolve('src/content/about', file);
+  if (!fs.existsSync(filePath)) throw error(404, 'Not found');
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const { data, content: body } = matter(content);
+  return {
+    frontmatter: data,
+    body
+  };
+}

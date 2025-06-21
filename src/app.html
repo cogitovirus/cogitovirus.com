@@ -1,12 +1,38 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon start -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-48x48.png" />
+    <link rel="apple-touch-icon" href="/assets/favicon-180x180.png" />
+    <link rel="mask-icon" href="/assets/favicon.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- favicon end -->
+
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.dataset.theme = 'dark';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.dataset.theme = 'light';
+        localStorage.setItem('theme', 'light');
+      }
+    </script>
+
+    <link rel="stylesheet" href="/dist/css/base.css" />
+
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+
+    <script src="/dist/js/preline.js"></script>
+  </body>
 </html>

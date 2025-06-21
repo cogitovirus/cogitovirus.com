@@ -1,0 +1,77 @@
+/* 
+DO NOT UPDATE THIS FILE, INSTEAD OVERRIDE
+STYLES ON style.css OR ANY OTHER FILE, SO
+IT WOULD BE EASIER TO UPDATE CODEBASE IN
+THE FUTURE
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CODE HIGHLIGHTER START */
+pre {
+  tab-size: 2;
+}
+
+code {
+  display: inline;
+}
+
+pre code {
+  display: grid;
+}
+
+.line {
+  counter-increment: count;
+}
+
+.line::before {
+  content: counter(count);
+  padding-inline: 0.5rem;
+  opacity: 0.4;
+}
+
+.highlighted {
+  background-color: #374151;
+}
+
+.highlighted.error {
+  background-color: rgba(244, 63, 94, .25);
+}
+
+.highlighted.warning {
+  background-color: rgba(234, 179, 8, .15);
+}
+
+.diff.remove {
+  background-color: rgba(164, 49, 69, 0.15);
+}
+
+.diff.remove::before {
+  content: '-';
+  font-weight: bold;
+  font-size: medium;
+}
+
+.diff.add {
+  background-color: rgba(48, 160, 123, 0.15);
+}
+
+.diff.add::before {
+  content: '+';
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* html[data-theme="light"] .code-copy-button {
+  color: #384252;
+} */
+
+.code-copy-button {
+  color: #888b8f;
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+/* CODE HIGHLIGHTER END */

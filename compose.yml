@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 5173:5173
+    volumes:
+      - ./src:/app/src
+      - ./static:/app/static
+      - ./tests:/app/tests
