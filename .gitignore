@@ -11,3 +11,4 @@ test/playwright/.cache/
 
 firebase-debug.log
 .DS_Store
+node_modules

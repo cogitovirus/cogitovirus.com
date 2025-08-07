@@ -1,6 +1,6 @@
 ---
 author: "wzolni"
-title: "The Sporkknife paradox"
+title: "Satire - The Sporkknife paradox"
 description: "A philosophical dive into the evolution of perception in a matrix where hybrid utensils like the Sporknife challenge binary thinking and reshape reality itself."
 date: 2025-04-20
 draft: false
